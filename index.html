@@ -1,0 +1,150 @@
+<html>
+  <head>
+
+    <style>
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+      text-rendering: optimizeLegibility;
+    }
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: 1px;
+      letter-spacing: -0.015em;
+      font-weight: 300;
+      text-rendering: optimizeLegibility;
+    }
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font: normal 12px/150% Arial, Helvetica, sans-serif;
+        background: #fff;
+    }
+    table, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 2px 2px;
+        text-align: center;
+    }
+    th {
+        padding: 3px 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        background-color:#DADADA;
+        color:#000000;
+        font-size: 15px;
+        border-left: 1px solid black;
+        height: 30px;
+    }
+    table tr {
+        color: #000000;
+        border: 1px solid black;
+        font-size: 12px;
+        font-weight: normal;
+        height: 40px;
+    }
+    audio {
+      width: 120px;
+      padding: 1px;
+    }
+    div {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      font-size: 15px;
+      line-height: 24px;
+    }
+    </style>
+
+    <meta charset="UTF-8">
+    <title>AN INVESTIGATION OF SPEAKER EMBEDDING SPACE SHARING BETWEEN END-TO-END SPEECH RECOGNITION AND SYNTHESIS SYSTEMS</title>
+  </head>
+
+  <body>
+    <article>
+      <header>
+        <h1>"AN INVESTIGATION OF SPEAKER EMBEDDING SPACE SHARING BETWEEN END-TO-END SPEECH RECOGNITION AND SYNTHESIS SYSTEMS"</h1>
+      </header>
+    </article>
+    <!-- <br> -->
+    <!-- <div style="font-size: 20px;"><b>Paper:</b> <a href="https://arxiv.org/">arXiv</a> </div> -->
+    <br>
+    <div style="font-size: 20px;"><b>Authors:</b> Dawei Liu, Longbiao Wang, Sheng Li, Haoyu Li, Chenchen Ding, Ju Zhang and Jianwu Dang</div>
+    <br>
+    <div style="font-size: 20px; width: 1200px;"><b>Abstract:</b> The current multi-speaker text-to-speech (TTS) based on speaker embedding has achieved significant progress. However, the speaker embedding extraction too relies on individual speaker verification or speaker recognition (SV/SR) system, which has a high demand for the number of speakers in the training set. In this paper, we propose a novel speaker embedding space sharing between end-to-end speech recognition and synthesis systems. The speaker embedding is extracted from a special transformer-based automatic speech recognition (ASR) system. We explicitly feed the speaker-id to the training label to let the ASR system learn the speaker’s characteristics. The experimental results show that the ASR system with speaker-id can successfully construct speaker embedding space. And this embedding can also improve the synthesized speech’s naturalness and similarity with target speakers, compared to the baseline multi-speaker TTS system.</div>
+
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <div><h2>Multi-Speaker TTS: the audios synthesized by multi-speaker TTS.</div>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th> </th>
+          <th colspan="6" style="background-color: #b3d1ff;">Seen</th>
+          <th colspan="6" style="background-color: #ffffff;">Unseen</th>
+        </tr>
+      </thead>
+
+      <thead>
+        <tr>
+          <th>Speaker</th>
+          <th colspan="3" style="background-color: #b3d1ff;">Speaker1</th>
+          <th colspan="3" style="background-color: #b3d1ff;">Speaker2</th>
+          <th colspan="3" style="background-color: #ffffff;">Speaker3</th>
+          <th colspan="3" style="background-color: #ffffff;">Speaker4</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <th style="background-color: #f2f2f2;">Ground Truth</th>
+          <td colspan="3"><audio controls=""><source src="audio/ground/83_9960_0001.flac" type="audio/wav"></audio> <audio controls=""><source src="audio/ground/83_9960_0026.flac" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/ground/5022_29405_0000.flac" type="audio/wav"></audio> <audio controls=""><source src="audio/ground/5022_29405_0009.flac" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/ground/260_123288_0002.flac" type="audio/wav"></audio> <audio controls=""><source src="audio/ground/260_123288_0024.flac" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/ground/1580_141083_0000.flac" type="audio/wav"></audio> <audio controls=""><source src="audio/ground/1580_141083_0001.flac" type="audio/wav"></audio> </td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #f2f2f2;">Replica</th>
+          <td colspan="3"><audio controls=""><source src="audio/nips/83_9960_0001_03.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/nips/83_9960_0001_04.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/nips/83_9960_0026_05.wav" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/nips/5022_29405_0000_04.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/nips/5022_29405_0000_05.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/nips/5022_29405_0009_02.wav" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/nips/260_123288_0002_04.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/nips/260_123288_0025_01.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/nips/260_123288_0025_02.wav" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/nips/1580_141083_0000_01.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/nips/1580_141083_0000_02.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/nips/1580_141083_0001_01.wav" type="audio/wav"></audio> </td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #f2f2f2;">ASR(ori)-TTS</th>
+          <td colspan="3"><audio controls=""><source src="audio/base/base_embed_83_9960_0001_03.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/base/base_embed_83_9960_0001_04.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/base/base_embed_83_9960_0026_01.wav" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/base/base_embed_5022_29405_0000_04.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/base/base_embed_5022_29405_0001_01.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/base/base_embed_5022_29405_0009_03.wav" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/base/base_embed_260_123288_0002_01.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/base/base_embed_260_123288_0002_02.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/base/base_embed_260_123288_0002_03.wav" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/base/base_embed_1580_141083_0000_02.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/base/base_embed_1580_141083_0001_02.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/base/base_embed_1580_141083_0001_04.wav" type="audio/wav"></audio> </td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #f2f2f2;">ASR(spk)-TTS</th>
+          <td colspan="3"><audio controls=""><source src="audio/spk/spk_embed_83_9960_0001_02.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/spk/spk_embed_83_9960_0001_03.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/spk/spk_embed_83_9960_0026_04.wav" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/spk/spk_embed_5022_29405_0000_03.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/spk/spk_embed_5022_29405_0000_04.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/spk/spk_embed_5022_29405_0009_01.wav" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/spk/spk_embed_260_123288_0002_01.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/spk/spk_embed_260_123288_0002_02.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/spk/spk_embed_260_123288_0002_04.wav" type="audio/wav"></audio> </td>
+          <td colspan="3"><audio controls=""><source src="audio/spk/spk_embed_1580_141083_0000_02.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/spk/spk_embed_1580_141083_0000_04.wav" type="audio/wav"></audio> <audio controls=""><source src="audio/spk/spk_embed_1580_141083_0001_05.wav" type="audio/wav"></audio> </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br>
+    <br>
+    
+
+    <br>
+    <br>
+    <br>
+
+    <div style="font-size: 16px">© 2021 TJU. All rights reserved.</div>
+
+  </body>
+</html>
