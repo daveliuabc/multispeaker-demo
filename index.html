@@ -56,21 +56,21 @@
     </style>
 
     <meta charset="UTF-8">
-    <title>AN INVESTIGATION OF SPEAKER EMBEDDING SPACE SHARING BETWEEN END-TO-END SPEECH RECOGNITION AND SYNTHESIS SYSTEMS</title>
+    <title>Exploring More Effective Speech Representation via ASR for High Quality of End-to-End Multi-Speaker TTS</title>
   </head>
 
   <body>
     <article>
       <header>
-        <h1><font style="line-height:1.5;">"AN INVESTIGATION OF SPEAKER EMBEDDING SPACE SHARING BETWEEN END-TO-END SPEECH RECOGNITION AND SYNTHESIS SYSTEMS"</font></h1>
+        <h1><font style="line-height:1.5;">"Exploring More Effective Speech Representation via ASR for High Quality of End-to-End Multi-Speaker TTS"</font></h1>
       </header>
     </article>
     <!-- <br> -->
     <!-- <div style="font-size: 20px;"><b>Paper:</b> <a href="https://arxiv.org/">arXiv</a> </div> -->
     <br>
-    <div style="font-size: 20px;"><b>Authors:</b> Dawei Liu, Longbiao Wang, Sheng Li, Haoyu Li, Chenchen Ding, Ju Zhang, Jianwu Dang and Zhenhua Ling</div>
+    <div style="font-size: 20px;"><b>Authors:</b> Dawei Liu, Longbiao Wang, Sheng Li, Haoyu Li, Chenchen Ding, Ju Zhang and Jianwu Dang</div>
     <br>
-    <div style="font-size: 20px; width: 1200px;"><b>Abstract:</b> The current multi-speaker text-to-speech (TTS) based on speaker embedding has achieved significant progress. However, the speaker embedding extraction too relies on individual speaker verification or speaker recognition (SV/SR) system, which has a high demand for the number of speakers in the training set. In this paper, we propose a novel speaker embedding space sharing between end-to-end speech recognition and synthesis systems. The speaker embedding is extracted from a special transformer-based automatic speech recognition (ASR) system. We explicitly feed the speaker-id to the training label to let the ASR system learn the speaker’s characteristics. The experimental results show that the ASR system with speaker-id can successfully construct speaker embedding space. And this embedding can also improve the synthesized speech’s naturalness and similarity with target speakers, compared to the baseline multi-speaker TTS system.</div>
+    <div style="font-size: 20px; width: 1200px;"><b>Abstract:</b> The quality of multi-speaker Text-to-Speech (TTS) is composed of speech naturalness and speaker similarity. The current multi-speaker TTS based on speaker embedding extracted by Speaker Verification (SV) or Speaker Recognition (SR) model has made significant progress in the speaker similarity of synthesized speech. However, SV/SR tasks build speaker space based on the differences between speakers in the training set, the speaker embedding extracted by them can improve the speaker similarity but lacking a positive influence on naturalness. Unlike SV/SR-based systems, the ASR encoder outputs contain relatively complete speech information, such as speaker information, timbre, prosody. Therefore, we propose using the ASR encoder to extract speech embedding to improve multi-speaker TTS quality, especially for speech naturalness. To enable the ASR system to learn the speaker characteristics better, we explicitly feed the speaker-id to the training label. The experimental results show that the speech embedding extracted by proposed methods has good speaker characteristics and has beneficial acoustic information for speech naturalness. The proposed method significantly improves the naturalness and similarity of multi-speaker TTS.</div>
 
     <br>
     <br>
